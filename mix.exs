@@ -5,7 +5,7 @@ defmodule LoggerJSONFileBackend.Mixfile do
     [app: :logger_json_file_backend,
      version: "0.1.7",
      description: "Logger backend that write a json map per line to a file",
-     elixir: "~> 1.2",
+     elixir: "~> 1.7",
      package: package(),
      deps: deps()]
   end
@@ -16,7 +16,7 @@ defmodule LoggerJSONFileBackend.Mixfile do
 
   defp deps do
     [
-      {:poison, "~> 1.5 or ~> 2.0"},
+      {:poison, "~> 3.1"},
       {:uuid, "~> 1.1"},
       {:json, "~> 0.3.2", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
